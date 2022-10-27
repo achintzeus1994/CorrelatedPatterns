@@ -1,0 +1,255 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9240,        247]
+NotebookOptionsPosition[      8247,        225]
+NotebookOutlinePosition[      8584,        240]
+CellTagsIndexPosition[      8541,        237]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"a_", ",", "b_"}], "]"}], ":=", 
+   RowBox[{"NIntegrate", "[", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"-", 
+         FractionBox[
+          SuperscriptBox["z", "2"], "2"]}]], 
+       RowBox[{"\[Sqrt]", 
+        RowBox[{"(", 
+         RowBox[{"2", "\[Pi]"}], ")"}]}]], "z"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "b"}], "/", "a"}], ",", "\[Infinity]"}], "}"}]}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"g", "[", 
+    RowBox[{"a_", ",", "b_"}], "]"}], ":=", 
+   RowBox[{"NIntegrate", "[", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"-", 
+         FractionBox[
+          SuperscriptBox["z", "2"], "2"]}]], 
+       RowBox[{"\[Sqrt]", 
+        RowBox[{"(", 
+         RowBox[{"2", "\[Pi]"}], ")"}]}]], 
+      SuperscriptBox["z", "2"]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{
+        RowBox[{"-", "b"}], "/", "a"}], ",", "\[Infinity]"}], "}"}]}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.817184416093975*^9, 3.817184457623539*^9}, {
+  3.817184540149466*^9, 3.8171845685035152`*^9}, {3.8171846458154163`*^9, 
+  3.8171846460622797`*^9}},
+ CellLabel->"In[89]:=",ExpressionUUID->"8e4e38e2-2f96-488e-ba1f-cc55b5ad4b6f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"f", "[", 
+       RowBox[{"a", ",", "b"}], "]"}], "\[Equal]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"g", "[", 
+       RowBox[{"a", ",", "b"}], "]"}], "\[Equal]", "0"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b"}], "}"}], ",", "Reals"}], "]"}]], "Input",
+ CellChangeTimes->{{3.817184577595725*^9, 3.817184635758909*^9}, {
+  3.817184677170185*^9, 3.817184678476718*^9}},
+ CellLabel->"In[92]:=",ExpressionUUID->"3d8fed3c-888c-4384-83cf-5ae8b8b2f676"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NIntegrate","inumr",
+   "\"The integrand \\!\\(\\*FractionBox[RowBox[{SuperscriptBox[\\\"\
+\[ExponentialE]\\\", RowBox[{\\\"-\\\", FractionBox[SuperscriptBox[\\\"z\\\", \
+\\\"2\\\"], \\\"2\\\"]}]], \\\" \\\", \\\"z\\\"}], SqrtBox[RowBox[{\\\"2\\\", \
+\\\" \\\", \\\"\[Pi]\\\"}]]]\\) has evaluated to non-numerical values for all \
+sampling points in the region with boundaries \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[Infinity]\\\", \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", RowBox[{RowBox[{\\\"0.`\\\", \\\"\
+\[VeryThinSpace]\\\"}], \\\"-\\\", FractionBox[\\\"0.1`\\\", \\\"a\\\"]}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"}\\\"}]\\).\"",2,92,19,20843122259279532632,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.8171846366932287`*^9, 3.8171846486509037`*^9}, 
+   3.817184678971607*^9},
+ CellLabel->
+  "During evaluation of \
+In[92]:=",ExpressionUUID->"045f69e1-adfa-4be1-9724-e9a7a7e43f8a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NIntegrate","inumr",
+   "\"The integrand \\!\\(\\*FractionBox[RowBox[{SuperscriptBox[\\\"\
+\[ExponentialE]\\\", RowBox[{\\\"-\\\", FractionBox[SuperscriptBox[\\\"z\\\", \
+\\\"2\\\"], \\\"2\\\"]}]], \\\" \\\", SuperscriptBox[\\\"z\\\", \\\"2\\\"]}], \
+SqrtBox[RowBox[{\\\"2\\\", \\\" \\\", \\\"\[Pi]\\\"}]]]\\) has evaluated to \
+non-numerical values for all sampling points in the region with boundaries \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[Infinity]\\\", \
+\\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \
+RowBox[{RowBox[{\\\"0.`\\\", \\\"\[VeryThinSpace]\\\"}], \\\"-\\\", \
+FractionBox[\\\"0.1`\\\", \\\"a\\\"]}]}], \\\"}\\\"}]}], \\\"}\\\"}], \\\"}\\\
+\"}]\\).\"",2,92,20,20843122259279532632,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.8171846366932287`*^9, 3.8171846486509037`*^9}, 
+   3.81718467897828*^9},
+ CellLabel->
+  "During evaluation of \
+In[92]:=",ExpressionUUID->"b11aecdd-b9aa-445b-80af-707af1fa7ec3"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NIntegrate","inumr",
+   "\"The integrand \\!\\(\\*FractionBox[RowBox[{SuperscriptBox[\\\"\
+\[ExponentialE]\\\", RowBox[{\\\"-\\\", FractionBox[SuperscriptBox[\\\"z\\\", \
+\\\"2\\\"], \\\"2\\\"]}]], \\\" \\\", \\\"z\\\"}], SqrtBox[RowBox[{\\\"2\\\", \
+\\\" \\\", \\\"\[Pi]\\\"}]]]\\) has evaluated to non-numerical values for all \
+sampling points in the region with boundaries \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[Infinity]\\\", \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.`\\\", \\\",\\\", RowBox[{RowBox[{\\\"0.`\\\", \\\"\
+\[VeryThinSpace]\\\"}], \\\"-\\\", FractionBox[\\\"0.1`\\\", \\\"a\\\"]}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"}\\\"}]\\).\"",2,92,21,20843122259279532632,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.8171846366932287`*^9, 3.8171846486509037`*^9}, 
+   3.817184678983745*^9},
+ CellLabel->
+  "During evaluation of \
+In[92]:=",ExpressionUUID->"22ab4162-a1d3-459d-8639-c06d7cc11798"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"NIntegrate\\\", \
+\\\"::\\\", \\\"inumr\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
+during this calculation.\"",2,92,22,20843122259279532632,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.8171846366932287`*^9, 3.8171846486509037`*^9}, 
+   3.817184678992148*^9},
+ CellLabel->
+  "During evaluation of \
+In[92]:=",ExpressionUUID->"8ad39883-ef6a-42b0-bfce-ca96b4428b18"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NSolve","ivar",
+   "\"\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0.`\\\", \\\",\\\", \
+\\\"0.1`\\\"}], \\\"}\\\"}]\\) is not a valid variable.\"",2,92,23,
+   20843122259279532632,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.8171846366932287`*^9, 3.8171846486509037`*^9}, 
+   3.817184678997796*^9},
+ CellLabel->
+  "During evaluation of \
+In[92]:=",ExpressionUUID->"6b9895ae-475c-4eea-9e17-2507fda31523"],
+
+Cell[BoxData[
+ RowBox[{"NSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{"-", 
+            FractionBox[
+             SuperscriptBox["z", "2"], "2"]}]], " ", "z"}], 
+         SqrtBox[
+          RowBox[{"2", " ", "\[Pi]"}]]], ",", 
+        RowBox[{"{", 
+         RowBox[{"z", ",", 
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{"{", 
+             RowBox[{"0.`", ",", "0.1`"}], "}"}], "a"]}], ",", 
+          "\[Infinity]"}], "}"}]}], "]"}], "\[Equal]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{"-", 
+            FractionBox[
+             SuperscriptBox["z", "2"], "2"]}]], " ", 
+          SuperscriptBox["z", "2"]}], 
+         SqrtBox[
+          RowBox[{"2", " ", "\[Pi]"}]]], ",", 
+        RowBox[{"{", 
+         RowBox[{"z", ",", 
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{"{", 
+             RowBox[{"0.`", ",", "0.1`"}], "}"}], "a"]}], ",", 
+          "\[Infinity]"}], "}"}]}], "]"}], "\[Equal]", "0"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.`", ",", "0.1`"}], "}"}]}], "}"}], ",", 
+   TemplateBox[{},
+    "Reals"]}], "]"}]], "Output",
+ CellChangeTimes->{{3.8171846367279987`*^9, 3.817184648679225*^9}, 
+   3.8171846790036907`*^9},
+ CellLabel->"Out[92]=",ExpressionUUID->"b213eef8-6d3f-4bba-a359-2a96c719e034"]
+}, Open  ]]
+},
+WindowSize->{808, 838},
+WindowMargins->{{Automatic, 138}, {1, Automatic}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1457, 45, 152, "Input",ExpressionUUID->"8e4e38e2-2f96-488e-ba1f-cc55b5ad4b6f"],
+Cell[CellGroupData[{
+Cell[2040, 69, 574, 15, 30, "Input",ExpressionUUID->"3d8fed3c-888c-4384-83cf-5ae8b8b2f676"],
+Cell[2617, 86, 996, 18, 97, "Message",ExpressionUUID->"045f69e1-adfa-4be1-9724-e9a7a7e43f8a"],
+Cell[3616, 106, 1020, 18, 97, "Message",ExpressionUUID->"b11aecdd-b9aa-445b-80af-707af1fa7ec3"],
+Cell[4639, 126, 996, 18, 97, "Message",ExpressionUUID->"22ab4162-a1d3-459d-8639-c06d7cc11798"],
+Cell[5638, 146, 503, 11, 24, "Message",ExpressionUUID->"8ad39883-ef6a-42b0-bfce-ca96b4428b18"],
+Cell[6144, 159, 459, 11, 24, "Message",ExpressionUUID->"6b9895ae-475c-4eea-9e17-2507fda31523"],
+Cell[6606, 172, 1625, 50, 164, "Output",ExpressionUUID->"b213eef8-6d3f-4bba-a359-2a96c719e034"]
+}, Open  ]]
+}
+]
+*)
+
