@@ -1,1 +1,1 @@
-# UncorrelatedPatterns
+# CorrelatedPatterns
